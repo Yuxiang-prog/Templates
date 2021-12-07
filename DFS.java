@@ -15,3 +15,22 @@ public static void main(String[]args) throws Exception {
 				dfs(u);
 	}
 }
+
+/* The above code is with an adjacency List. Instead an adjacency matrix can also be used */
+public static boolean[][]adj;
+static void dfs(int pos) {
+    visited[pos] = true;
+    for (int to = 0; to < P; to++) {
+    if (adj[pos][to] && !visited[to]) dfs(to);
+}
+
+static class Edge{
+    int a, b;
+    Edge(int a, int b) {
+	this.a = a;
+	this.b = b;
+    }
+}
+	
+	
+	
