@@ -9,3 +9,7 @@ static ArrayList<Integer> factor(int n) {
 	if (n > 1) factors.add(n);
 	return factors;
 }
+
+/*
+This algorithm runs in O(sqrt(N)) time because the loop checks divisibility for at most sqrt(N) time 
+*/
