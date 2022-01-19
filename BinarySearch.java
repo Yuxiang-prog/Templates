@@ -21,3 +21,28 @@ public class BinarySearch {
         }
     }
 }
+	
+static int LowerBound(int a[], int x) { // x is the target value or key
+  int l=-1,r=a.length;
+  while(l+1<r) {
+    int m=(l+r)>>>1;
+    if(a[m]>=x) r=m;
+    else l=m;
+  }
+  return r;
+}
+	
+static int UpperBound(int a[], int x) {// x is the key or target value
+    int l=-1,r=a.length;
+    while(l+1<r) {
+       int m=(l+r)>>>1;
+       if(a[m]<=x) l=m;
+       else r=m;
+    }
+    return l+1;
+ }
+	
+	
+	
+	
+
