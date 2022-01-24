@@ -46,6 +46,18 @@ static int UpperBound(int a[], int x) {// x is the key or target value
 //See this problem for reference: http://www.usaco.org/index.php?page=viewproblem2&cpid=690
 	
 	
-	
+BinarySearch problem that finds the maximum value 
+while (lo <= hi) {
+        long mid = (lo + hi) / 2;
+ 
+        if (ok(mid)) {
+            res = mid;
+            lo = mid + 1;
+        }
+        else {
+            hi = mid - 1;
+        }
+    }
+ 
 	
 
