@@ -42,7 +42,7 @@ static int UpperBound(int a[], int x) {// x is the key or target value
     return l+1;
  }
 	
-//This is the binary search used to find the maximum value that can be used in a search
+//This is the binary search used to find the minimum value that can be used in a search
 //See this problem for reference: http://www.usaco.org/index.php?page=viewproblem2&cpid=690
 	
 	
