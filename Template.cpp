@@ -22,6 +22,15 @@ void setIO(string s) {
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
+ll gcd(ll a, ll b){
+	if (a == 0) return b;
+	gcd(b  %a, a);
+}
+
+ll lcm(ll a, ll b){
+	return (a*b) / gcd(a, b);
+}
+
 int main(){
   setIO("");
   ios::sync_with_stdio(false);
@@ -29,4 +38,6 @@ int main(){
   
   return 0;
 }
+
+
 
